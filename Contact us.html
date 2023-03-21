@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon"
+        href="https://media.istockphoto.com/id/1321617070/vector/health-medical-logo.jpg?s=612x612&w=0&k=20&c=sus8vhG3c__vCdvOBLDhuf2vPUgIAudIAeUBApU_7Ew="
+        type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Contact us</title>
+</head>
+
+<body>
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                <img src="https://media.istockphoto.com/id/1321617070/vector/health-medical-logo.jpg?s=612x612&w=0&k=20&c=sus8vhG3c__vCdvOBLDhuf2vPUgIAudIAeUBApU_7Ew="
+                    width="50">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl" style="color:white;">
+                    <h1>Al-Karam Pharmacy</h1>
+                </span>
+            </a>
+            <nav
+                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+                <a href="/Project.html/medicine.html/Alkaram Pharmacy/index.html"class="mr-5 hover:text-white"> Home
+                </a>
+                <a href="/Project.html/medicine.html/Aboutus.html" class="mr-5 hover:text-white"> About Us</a>
+                <a href="/Project.html/medicine.html/Our Services.html" class="mr-5 hover:text-white">Our Sources</a>
+                <a href="/Project.html/medicine.html/Contact us.html\" class="mr-5 hover:text-white">Contact us</a>
+            </nav>
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+            </button>
+        </div>
+    </header>
+
+
+    <div class="contact">
+        <form onsubmit="sendemail()">
+            <h1 style="font-size: 30px;"> <b>Contact Us </b></h1>
+            <input type="text" placeholder="Name" Name="" height="20px"><br>
+            <input type="email" placeholder="Email" Email=""><br>
+            <input type="text" placeholder="Subject" Subject=""><br>
+            <textarea placeholder="Type Message" rows="6">
+</textarea>
+<button> Send Message</button>
+        </form>
+    </div>
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendemail(){
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "umershakeel210@gmail.com",
+            Password: "0B28E06EE8300166810F353960EA212D39AC",
+            To: 'umershakeel212@gmail.com',
+            From: document.getElementById("idname").value,
+            Subject: "This is anew Message",
+            Body: document.getElementById("message").value,
+        }).then(
+            message => alert( new message)
+        );
+    }
+    </script>
+
+
+
+
+
+    <footer class="text-gray-400 bg-gray-900 body-font">
+        <div
+            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                    <img src="https://media.istockphoto.com/id/1321617070/vector/health-medical-logo.jpg?s=612x612&w=0&k=20&c=sus8vhG3c__vCdvOBLDhuf2vPUgIAudIAeUBApU_7Ew="
+                        width="50">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span class="ml-3 text-xl">Al-Karam Pharmacy</span>
+                </a>
+                <p class="mt-2 text-sm text-gray-500">We offer pharmacy care services, medications, cosmetics, and
+                    personal care items from reputable national and worldwide companies.</p>
+            </div>
+            <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Quick links</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a href="/Project.html/medicine.html/Aboutus.html"
+                                class="text-gray-400 hover:text-white">About us</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Contact us</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-400 hover:text-white">Our sourses</a>
+                        </li>
+
+                    </nav>
+                </div>
+
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Contact us</h2>
+                    <nav class="list-none mb-10">
+                        <p>Head Office Dabgari Garden opposite Shangrilla Hotel,
+                            Peshawar City , KPk<br>
+                            Email:naveed.naveedshezad@yahoo.com
+                            Number: 03015941621
+                        </p>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-800 bg-opacity-75">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-400 text-sm text-center sm:text-left">© 2020 Al-karam Pharmacy — Designd and develop
+                    By Umer shakeel
+
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-400">
+
+                        <a href="https://www.facebook.com/people/al-karam-pharmacy/100064028797649/" target="-main"><img
+                                src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" width="50">
+
+
+                        </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
